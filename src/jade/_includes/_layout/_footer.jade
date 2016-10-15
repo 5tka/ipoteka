@@ -1,0 +1,31 @@
+footer.footer
+    .container
+        .footer-wrapper.clearfix
+            .footer__logo-wrap
+                img.footer__logo-img(src="http://placehold.it/120x120", alt="")
+            .footer__contacts-wrap
+                ul.contacts-list
+                    li
+                        a(href="tel:+1234567890")
+                            | tel: +1234567890
+                    li
+                        a(href="mailto:someone@example.com")
+                            | email: adress@email.dot
+                    li
+                        a(href="#")
+                            | ardess: google.map
+            .footer__feedback-wrap
+                h3.footer__feedback-title
+                    | Закажите звонок
+                button.footer__call
+                    | Звоните
+
+
+    form.ffeedback-form
+        h2.ffeedback-title
+            |Lorem ipsum dolor sit.
+        label(for="name")
+            input.ffeedback-name(type="text" placeholder="Your name")
+        label(for="email")
+            input.ffeedback-email(type="text" placeholder="Your email")
+        input.ffeedback-btn(type="submit" value="Send")

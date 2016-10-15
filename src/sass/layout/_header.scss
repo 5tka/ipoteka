@@ -1,0 +1,59 @@
+.wrapper {
+    overflow-x: hidden;
+}
+.header {
+    font-family: "Open Sans";
+    color: #e8e8e8;
+    font-size: 18px;
+    &__top-line {
+        background: #3a424c;
+        min-height: 75px;
+        line-height: 72px;
+        width: 100%;
+        z-index: 3;
+        .logo-img {
+            vertical-align: middle;
+            line-height: 72px;
+        }
+    }
+}
+.header__gallery-wrap {
+    position: relative;
+    .arrow-down {
+        display: block;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        z-index: 2;
+        transform: rotate(90deg);
+        opacity: .65;
+        @include transition(.5s);
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .owl-nav {
+        display: block !important;
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        text-align: justify;
+        left: 0;
+        .owl-prev, .owl-next {
+            position: absolute;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+        .owl-prev {
+            left: 30px;
+            background: url("../img/arrow_left.svg");
+        }
+        .owl-next {
+            right: 30px;
+            background: url("../img/arrow_right.svg");
+        }
+    }
+}

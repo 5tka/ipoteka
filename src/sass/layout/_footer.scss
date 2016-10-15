@@ -1,0 +1,103 @@
+.footer {
+    padding: 50px 0;
+    min-height: 200px;
+    outline: 1px solid red;
+    background: #171324;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: #ccc;
+    &-wrapper {
+        width: 100%;
+        text-align: justify;
+        &:last-child:after {
+            content: "";
+            width: 100%;
+            display: inline-block;
+        }
+    }
+    &__contacts-wrap {
+        text-align: center;
+        .contacts-list {
+            li {
+                margin-bottom: 15px;
+                &::last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__feedback {
+        &-wrap {
+            text-align: center;
+            .footer__call {
+                width: 200px;
+                background: #e8a894;
+                height: 40px;
+                border-radius: 5px;
+                color: #fff;
+                &:hover {
+                    background: rgb(228, 143, 117);
+                }
+                &:active {
+                    background: rgb(215, 92, 55);
+                }
+            }
+        }
+        &-title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.footer__logo-wrap, .footer__contacts-wrap, .footer__feedback-wrap {
+    display: inline-block;
+    position: relative;
+    width: 30%; // ширина обязательна
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ffeedback-form {
+    font-family: "Open Sans";
+    font-weight: 400;
+    display: none;
+    width: 350px;
+    background: #fff;
+    padding: 20px;
+    .ffeedback {
+        &-title {
+            text-align: center;
+            color: #000;
+            margin-bottom: 15px;
+        }
+        &-name, &-email, &-btn {
+            width: 100%;
+            height: 35px;
+            margin-bottom: 10px;
+            outline: none;
+            padding: 10px;
+        }
+        &-name[placeholder], &-email[placeholder] {
+            font-style: italic;
+        }
+        &-btn {
+            width: 130px;
+            height: 50px;
+            font-size: 18px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            margin-bottom: 0;
+            border: none;
+            background: #e48f75;
+            color: #fff;
+            border-bottom: 3px solid #d75c37;
+            &:hover {
+                background: rgb(232, 168, 148);
+            }
+            &:active {
+                background: rgb(234, 115, 78);
+            }
+        }
+    }
+}

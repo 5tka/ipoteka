@@ -1,0 +1,75 @@
+.feedbacks {
+    min-height: 700px;
+    #rewivew-wrap {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    &__title {
+        &-wrap {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        &-dscr {
+            font-family: "Oswald";
+            font-size: 42px;
+            margin-bottom: 35px;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 85px;
+                top: 100%;
+                bottom: 0;
+                left: 50%;
+                margin: 4px 0 0 -42.5px;
+                border: 2px solid #000;
+            }
+        }
+        &-subtitle {
+            margin-bottom: 23px;
+            font-size: 18px;
+        }
+    }
+    &__items {
+        &-wrap {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        &-reported {
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                background: url(../img/arrow.png) no-repeat;
+                height: 41px;
+                left: 100px;
+                bottom: -40px;
+                width: 48px;
+            }
+            p {
+                font-size: 14px;
+                border: 1px solid #cbcbcb;
+                padding: 40px 20px 40px 40px;
+                border-radius: 7px;
+            }
+        }
+    }
+    &__comment {
+        &-wrap {
+            display: table;
+        }
+        &-img, &-data {
+            display: table-cell;
+        }
+        &-img {
+            padding-right: 25px;
+            img {
+                border-radius: 50%;
+            }
+        }
+        &-data {
+            vertical-align: middle;
+        }
+    }
+}

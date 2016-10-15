@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+
+* {
+    box-sizing: border-box;
+}
+.fl-l {
+    float: left;
+}
+.fl-r {
+    float: right;
+}
+section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @extend .clearfix;
+}
+
+.clearfix:before, .clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: "\0020";
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}

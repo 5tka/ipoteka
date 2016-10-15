@@ -1,0 +1,22 @@
+section.contacts
+    .container
+        .contacts__title-wrap
+            h1.contacts__title-dscr
+                | Lorem ipsum dolor sit.
+            p.contacts__title-subtitle
+                |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur, qui quod modi, iste dolor.
+        .contacts__feedbacks.clearfix
+            .contacts__feedbacks-map.fl-l
+                iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57488.58383481522!2d30.52650090469416!3d50.44742469482979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1476516926318',  
+                frameborder='0', 
+                style='border:0', 
+                allowfullscreen='')
+            .contacts__feedbacks-form.fl-r
+                form.feedback-form
+                    h2.feedback-title
+                        |Lorem ipsum dolor sit.
+                    label(for="name")
+                        input.feedback-name(type="text" placeholder="Your name")
+                    label(for="email")
+                        input.feedback-email(type="text" placeholder="Your email")
+                    input.feedback-btn(type="submit" value="Send")

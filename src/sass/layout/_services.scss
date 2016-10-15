@@ -1,0 +1,82 @@
+.service {
+    min-height: 400px;
+    background: #f5f5f5;
+    &__items-wrap {
+        width: 100%;
+        text-align: justify;
+        &:last-child:after {
+            content: "";
+            width: 100%;
+            display: inline-block;
+        }
+    }
+    &__title {
+        &-wrap {
+            text-align: center;
+        }
+        &-dscr {
+            font-family: "Oswald";
+            font-size: 42px;
+            margin-bottom: 35px;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 85px;
+                top: 100%;
+                bottom: 0;
+                left: 50%;
+                margin: 4px 0 0 -42.5px;
+                border: 2px solid #000;
+            }
+        }
+        &-subtitle {
+            margin-bottom: 23px;
+            font-size: 18px;
+        }
+    }
+    &__item {
+        display: inline-block;
+        border: 3px solid #d75c37;
+        padding: 15px;
+        position: relative;
+        width: 24%; // ширина обязательна
+        text-align: center;
+        &:after {
+            content: "";
+            position: absolute;
+            border-top: 40px solid #d75c37;
+            border-left: 40px solid transparent;
+            display: inline-block;
+            right: 0;
+            top: 0;
+        }
+        .serv {
+            &-ic {
+                margin-bottom: 25px;
+            }
+            &-title {
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            &-dscr {
+                margin-bottom: 20px;
+                text-align: center;
+                line-height: 20px;
+                font-size: 14px;
+            }
+            &-btn {
+                padding: 10px;
+                background: rgba(215,92,55,.6);
+                color: #fff;
+                border-bottom: 3px solid rgba(215,92,55,.6);
+                &:hover {
+                    background: rgba(215,92,55,.5);
+                }
+                &:active {
+                    background: rgba(215,92,55,.75);
+                }
+            }
+        }
+    }
+}
